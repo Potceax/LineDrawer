@@ -9,7 +9,7 @@ Whole project was developed with the use of graphics and math libraries (freeglu
 ## Installation and running
 The project was developed on **Windows 10** and tested on an **AMD Radeon 6600** with an **Intel i5-12400F**. All necessary libraries are included in the project
 
-To build a project move files to destined folder and use CMake build command:
+To build a project move files to destination folder and use CMake build command:
 
 ```bash
 cmake -B build

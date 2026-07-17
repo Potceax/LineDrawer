@@ -15,12 +15,10 @@
 *.ilk
 
 # Debugger Files
-*.pdb
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 *.so.*
 
 

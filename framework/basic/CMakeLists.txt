@@ -11,7 +11,7 @@ set(BASIC_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_include_directories(basic PUBLIC ${BASIC_INCLUDE_DIR})
 
 # set define paths for data files (this has to be absolute)
-set(BASIC_DATA_PATH ${CMAKE_SOURCE_DIR}/data)
+set(BASIC_DATA_PATH ${CMAKE_SOURCE_DIR})
 set(BASIC_TEXTURE_PATH ${BASIC_DATA_PATH}/texture)
 set(BASIC_MESH_PATH ${BASIC_DATA_PATH}/mesh)
 set(BASIC_SHADER_PATH ${BASIC_DATA_PATH}/shader)

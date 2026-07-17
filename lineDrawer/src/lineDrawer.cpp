@@ -44,7 +44,7 @@ public:
 		if (buttonType == m_mouseButton)
 		{
 			m_bIsHeld = !state;
-			std::cout << state << '\n';
+			//std::cout << state << '\n';
 		}
 
 		//if (true) // set start mouse position to current one
@@ -644,6 +644,18 @@ void keyboard(unsigned char key, int x, int y)
 	else if (key == 'd')
 	{
 		g_lineDrawPtr->AddVert(LineVertex{ glm::vec4(0.5f, 0.25f, 0.9f, 1.0f), g_coords.NDC, glm::vec2(0.0f, 0.0f), false });
+	}
+	switch(key)
+	{
+	case 'a':
+		g_lineDrawPtr->RemoveVert();
+		break;
+	case 'd':
+		g_lineDrawPtr->AddVert(LineVertex{ glm::vec4(0.5f, 0.25f, 0.9f, 1.0f), g_coords.NDC, glm::vec2(0.0f, 0.0f), false });
+		break;
+	case 27: // esc
+		glutLeaveMainLoop();
+		break;
 	}
 };
 

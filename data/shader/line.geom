@@ -80,7 +80,7 @@ void GenArc(in vec2 u, in vec2 v, in int isLeft)
     float angleEnd = atan(vs_out[1].pos.y - origin.y, vs_out[1].pos.x - origin.x);
 
     // calculate angle, map to  [-PI, PI]
-    float sweep = fract(angleEnd - angleStart);
+    float sweep = angleEnd - angleStart;
     while (sweep > 3.14159)  sweep -= 2.0 * 3.14159;
     while (sweep < -3.14159) sweep += 2.0 * 3.14159;
 

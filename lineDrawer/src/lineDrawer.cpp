@@ -636,15 +636,16 @@ void reshape(int w, int h)
 
 void keyboard(unsigned char key, int x, int y) 
 {
-	// LINE TEST - change to mouse interactions later on
-	if (key == 'a')
-	{
-		g_lineDrawPtr->RemoveVert();
-	}
-	else if (key == 'd')
-	{
-		g_lineDrawPtr->AddVert(LineVertex{ glm::vec4(0.5f, 0.25f, 0.9f, 1.0f), g_coords.NDC, glm::vec2(0.0f, 0.0f), false });
-	}
+	//// LINE TEST - change to mouse interactions later on
+	//if (key == 'a')
+	//{
+	//	g_lineDrawPtr->RemoveVert();
+	//}
+	//else if (key == 'd')
+	//{
+	//	g_lineDrawPtr->AddVert(LineVertex{ glm::vec4(0.5f, 0.25f, 0.9f, 1.0f), g_coords.NDC, glm::vec2(0.0f, 0.0f), false });
+	//}
+
 	switch(key)
 	{
 	case 'a':
